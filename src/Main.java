@@ -21,16 +21,13 @@ public class Main {
         user = user.toUpperCase();
         boolean found = false;
 
-        String dataBank = "KAUADIW832MELLCIAMIPEDROOASRAWENYHORLKMLETICIAFMATHIASFEOIWEROVICTORI23JR23OI";
+        String dataBank = "KAUADIW832MELLCI98F9AJS8FJ9W48QR9832ROMERO9RAMADRIANOIPEDROOASRAWENYHORLKMLETICIAFMATHIASFEOIWEROVICTORI23JR23OI";
 
         for (int i = 0; i < dataBank.length(); i++){
 
             if (dataBank.charAt(i) == user.charAt(0) && dataBank.charAt(i + 1) == user.charAt(1)) {
 
-                int first = dataBank.indexOf(user.charAt(0), i);
-                int last = dataBank.indexOf(user.charAt(user.length() - 1), i);
-
-                String name = dataBank.substring(first, last + 1);
+                String name = dataBank.substring(i, i + user.length());
 
                 if (name.equals(user)) {
 
